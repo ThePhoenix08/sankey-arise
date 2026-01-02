@@ -1,0 +1,150 @@
+   A1 main  ?2   49ms 
+➜ cd "d:\User_Data\Vighnesh_data\Code Data\Code\C++\sankey-arise\A1\" ; if ($?) { g++ attendance.cpp -o attendance } ; if ($?) { .\attendance }
+Enter Class Name: A
+Enter Grade: 10
+
+ === Initialized Attendance System ===
+Class: A| Grade: 10
+Date: 2026-01-02 | Day: 2026-01-02
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 1
+Enter studentId: 1
+Attendance marked for student 1.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 1
+Enter studentId: 2
+Attendance marked for student 2.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 1
+Enter studentId: 3
+Attendance marked for student 3.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 1
+Enter studentId: 5
+Attendance marked for student 5.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 1
+Enter studentId: 9
+Attendance marked for student 9.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 4
+
+Student present (in order of arrival):
+1 -> 2 -> 3 -> 5 -> 9
+Total: 5 students.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 2
+Undo successful. Removed student 9.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 3
+Enter studentId to check: 3
+Present
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 4
+
+Student present (in order of arrival):
+1 -> 2 -> 3 -> 5
+Total: 4 students.
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 5
+
+--- Class Metadata ---
+Class Name: A
+Grade: 10
+Date: 2026-01-02
+Day: 2026-01-02
+Total present: 4
+-----------------------
+
+========== 🎓 Student Attendance Management ==========
+1. Mark Attendance
+2. Undo Last Attendance
+3. Check if Student is Present
+4. Display All Attendance
+5. Show Metadata
+6. Exit
+=====================================================
+Enter your choice (1-6): 6
+Exiting Attendance System.
+    A1 main  ?2   1m 13.099s 
+➜
