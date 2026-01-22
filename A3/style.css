@@ -16,3 +16,107 @@ html {
   font-size: 16pt;
   color: var(--text-color);
 }
+
+body {
+  min-height: 100vh;
+  padding: 10px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.main-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#todo-input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  width: 100%;
+  background: none;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1000px;
+  font: inherit;
+  color: var(--text-color);
+  caret-color: var(--accent-color);
+}
+
+#todo-input:focus {
+  outline: none;
+}
+
+form {
+  position: relative;
+}
+
+#add-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  height: 100%;
+  padding: 0 30px;
+  border: none;
+  border-radius: 1000px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--background);
+  cursor: pointer;
+}
+
+@media(max-width: 1100px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mascot-container,
+  .progress-container {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 500px) {
+  html {
+    font-size: 12pt;
+  }
+
+  #add-button {
+    position: unset;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    height: auto;
+  }
+
+  h1 {
+    margin-top: 50px;
+    font-size: 15vw;
+  }
+}
