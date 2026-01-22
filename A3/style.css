@@ -425,7 +425,7 @@ input[type="checkbox"] {
 
 @media(max-width: 1100px) {
   .main-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
