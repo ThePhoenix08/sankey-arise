@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherScope - Your Weather Companion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Archivo:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="app-header">
+      <div class="header-content">
+        <h1 class="app-title">
+          <span class="title-icon">☀</span>
+          WeatherScope
+        </h1>
+        <nav class="nav-tabs">
+          <button class="nav-tab active" data-screen="home">
+            <span class="tab-icon">🏠</span>
+            <span>Home</span>
+          </button>
+          <button class="nav-tab" data-screen="favorites">
+            <span class="tab-icon">⭐</span>
+            <span>Favorites</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <section class="screen active" id="home-screen">
+
+        <div class="search-section">
+          <div class="search-container">
+            <input type="text" id="city-search" class="search-input" placeholder="Search for a city..."
+              autocomplete="off">
+            <button id="search-btn" class="search-btn">
+              <span class="btn-text">Search</span>
+              <span class="btn-icon">🔍</span>
+            </button>
+          </div>
+
+          <div id="loading-indicator" class="loading-indicator hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+          </div>
+
+          <div id="error-message" class="error-message hidden">
+            <span class="error-icon">⚠️</span>
+            <p id="error-text"></p>
+          </div>
+        </div>
+
+        <div id="weather-display" class="weather-display hidden">
+
+          <div class="current-weather-card">
+            <div class="card-header">
+              <div class="location-info">
+                <h2 id="current-city" class="city-name"></h2>
+                <p id="current-date" class="current-date"></p>
+              </div>
+              <button id="favorite-btn" class="favorite-btn" title="Add to favorites">
+                <span class="star-icon">☆</span>
+              </button>
+            </div>
+
+            <div class="current-weather-content">
+              <div class="weather-main">
+                <div class="weather-icon-large" id="weather-icon-main"></div>
+                <div class="temperature-display">
+                  <span id="current-temp" class="temperature-value"></span>
+                  <span class="temperature-unit">°C</span>
+                </div>
+              </div>
+
+              <div class="weather-details">
+                <div class="detail-item">
+                  <span class="detail-icon">🌡️</span>
+                  <div class="detail-content">
+                    <span class="detail-label">Feels Like</span>
+                    <span id="feels-like" class="detail-value"></span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">💨</span>
+                  <div class="detail-content">
+                    <span class="detail-label">Wind Speed</span>
+                    <span id="wind-speed" class="detail-value"></span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">💧</span>
+                  <div class="detail-content">
+                    <span class="detail-label">Humidity</span>
+                    <span id="humidity" class="detail-value"></span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-icon">☁️</span>
+                  <div class="detail-content">
+                    <span class="detail-label">Condition</span>
+                    <span id="weather-condition" class="detail-value"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="forecast-section">
+            <h3 class="forecast-title">5-Day Forecast</h3>
+            <div id="forecast-grid" class="forecast-grid">
+              <!-- Forecast -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="favorites-screen">
+        <div class="favorites-container">
+          <h2 class="favorites-title">Your Favorite Cities</h2>
+          <div id="favorites-empty" class="favorites-empty">
+            <span class="empty-icon">⭐</span>
+            <p>No favorite cities yet</p>
+            <p class="empty-hint">Search for a city and add it to your favorites!</p>
+          </div>
+          <div id="favorites-grid" class="favorites-grid">
+            <!-- Favorite cards -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <p>Powered by <a href="https://open-meteo.com/" target="_blank">Open-Meteo API</a></p>
+      <p class="footer-note">Educational Weather App • Built with Vanilla JavaScript</p>
+    </footer>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
